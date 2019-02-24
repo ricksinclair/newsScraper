@@ -23,7 +23,9 @@ app.set("view engine", "handlebars");
 // Static directory
 app.use(express.static("public"));
 
-app.listen(PORT, () => console.log(`App now listening on ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`App now listening on ${PORT}`);
+});
 
 // // Routes
 // // =============================================================
